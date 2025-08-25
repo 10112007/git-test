@@ -14,6 +14,7 @@ void goodbye(){printf("Thank you for using my \"%s\"!\n", PROJECT_NAME);}
 int main(){
     welcome();
     printf("Demonstrating usleep(500000): Sleeping for 0.5 seconds...\n");
+    printf("This is the main branch!\n");
     usleep(500000); // Sleep for 500,000 microseconds (0.5 seconds)
     printf("Woke up after 0.5 seconds!\n");
     sleep(1); // Simulate some processing time
