@@ -4,6 +4,7 @@
 */
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 const char *PROJECT_NAME = "My GIT Learning Journey";
 
@@ -12,14 +13,11 @@ void goodbye(){printf("Thank you for using my \"%s\"!\n", PROJECT_NAME);}
 
 int main(){
     welcome();
-    printf("This is a list of all C23 standard header files!\n");
-    printf("This is the bugfix copy\n");
-    
     printf("Demonstrating usleep(500000): Sleeping for 0.5 seconds...\n");
     printf("This is the main branch!\n");
+    
     usleep(500000); // Sleep for 500,000 microseconds (0.5 seconds)
     printf("Woke up after 0.5 seconds!\n");
-    printf("Demonstrating sleep(1): Sleeping for 1 second...\n");
     sleep(1); // Simulate some processing time
     //Here is the list of all functions of unistd.h
     printf("1. sleep(seconds): Suspend execution for a specified time.\n");
