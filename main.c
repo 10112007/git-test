@@ -27,7 +27,11 @@ int main(){
     printf("7. getppid(): Get the parent process ID of the calling process.\n");
     printf("8. ttyname(fd): Get the name of the terminal associated with a file descriptor.\n");
     sleep(1); // Simulate some processing time
-    write(STDOUT_FILENO, "Hello, World!\n", 14);
+    printf("9. write(fd, buf, count): Write data to a file descriptor.\n");
+    ssize_t bytes_written = write(STDOUT_FILENO, "Hello, World!\n", 14);
+    if (bytes_written == -1) {
+        perror("write");
+    }
     goodbye();
     return 0;
 }
