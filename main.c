@@ -14,7 +14,8 @@ void goodbye(){printf("Thank you for using my \"%s\"!\n", PROJECT_NAME);}
 int main(){
     welcome();
     printf("This is a list of all C23 standard header files!\n");
-    printf("This is main.c and Bugfix merged\n");
+    printf("This is main.c and Bugfix and bugfix copy both merged\n");
+
     printf("Demonstrating usleep(500000): Sleeping for 0.5 seconds...\n");
     printf("This is the main branch!\n");
     
