@@ -13,6 +13,9 @@ void goodbye(){printf("Thank you for using my \"%s\"!\n", PROJECT_NAME);}
 
 int main(){
     welcome();
+    printf("Demonstrating usleep(500000): Sleeping for 0.5 seconds...\n");
+    usleep(500000); // Sleep for 500,000 microseconds (0.5 seconds)
+    printf("Woke up after 0.5 seconds!\n");
     sleep(1); // Simulate some processing time
     //Here is the list of all functions of unistd.h
     printf("1. sleep(seconds): Suspend execution for a specified time.\n");
